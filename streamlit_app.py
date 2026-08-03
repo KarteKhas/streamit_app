@@ -18,7 +18,7 @@ st.write('st.text Example')
 st.header('display numbers:')
 st.write(1234)
 st.header('display dataframe:')
-df = pd.read_excel("main/mar_camp.xlsx")
+df = pd.read_excel("mar_camp.xlsx")
 st.write(df.head(5))
 st.write('blow is a dataframe:' , df , 'above is a dataframe:')
 st.plotly_chart(px.scatter(df, x='Spend' , y='Conversions' , color='Channel'  , hover_data=['Spend'] , title='Spend vs Conversions' ,
